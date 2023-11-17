@@ -1,0 +1,102 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+div {
+    height: 200px;
+    width: 200px;
+    background-image: url(/photo/media/pexels-photo-112116.webp);
+    background-size: cover;
+}
+#tr {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    animation-name: ptr;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+#tl {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    animation-name: ptl;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+#bl {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    animation-name: pbl;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+#br {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    animation-name: pbr;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes ptl {
+    0% {
+       opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+}
+@keyframes ptr {
+    0% {
+        opacity: 0;
+     }
+     25% {
+         opacity: 1;
+     }
+     50% {
+         opacity: 0;
+     }
+     75% {
+         opacity: 0;
+     }
+}
+@keyframes pbl {
+    0% {
+        opacity: 0;
+     }
+     25% {
+         opacity: 0;
+     }
+     50% {
+         opacity: 1;
+     }
+     75% {
+         opacity: 0;
+     }
+}
+@keyframes pbr {
+    0% {
+        opacity: 0;
+     }
+     25% {
+         opacity: 0;
+     }
+     50% {
+         opacity: 0;
+     }
+     75% {
+         opacity: 1;
+     }
+}

@@ -1,0 +1,9 @@
+li[data-dir=up] {
+color: green;
+}
+li[data-dir=down] {
+    color: red
+}
+ul li::before {
+    content: "";
+}

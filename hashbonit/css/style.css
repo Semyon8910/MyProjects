@@ -1,0 +1,37 @@
+form {
+    height: 500px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+}
+input[type=number]:valid {
+    background-color: yellowgreen;
+}
+input[type=number]:invalid {
+    background-color: red;
+}
+input[type=text]:valid {
+    background-color: yellowgreen;
+}
+input[type=text]:invalid {
+    background-color: red;
+}
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+}
+select {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+}
+input:hover {
+    box-shadow: 0px 0px 3px 5px green;
+    background-color: yellow;
+}
+select:hover {
+    box-shadow: 0px 0px 3px 5px green;
+    background-color: yellow;
+}

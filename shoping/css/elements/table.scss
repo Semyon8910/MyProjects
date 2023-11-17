@@ -1,0 +1,9 @@
+$tableborder: solid 1px black;
+$tablemarginL: auto;
+$tablemarginR: auto;
+
+table {
+    border: $tableborder;
+    margin-left: $tablemarginL;
+    margin-right: $tablemarginR;
+}

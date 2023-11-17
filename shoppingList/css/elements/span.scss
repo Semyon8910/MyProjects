@@ -1,0 +1,7 @@
+$spanBorder: solid 1px black;
+$spanShadow: 2px 2px 2px 2px;
+
+span {
+    border: $spanBorder;
+    box-shadow: $spanShadow;
+}

@@ -1,0 +1,38 @@
+body {
+    background-color: bisque;
+    text-align: center;
+}
+div {
+    background-color: gray;
+    height: 400px;
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: auto;
+    border-radius: 10%;
+}
+figure {
+    box-shadow: inset 0px 20px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+figure:hover {
+    background-color: black;
+} 
+figure:first-child {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+figure:nth-child(2) {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+figure:nth-child(3) {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
