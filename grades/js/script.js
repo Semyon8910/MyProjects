@@ -1,13 +1,16 @@
-var grades = [];
+var grades=[];
 var index=0;
-while (grades[index]==-99) {
-    grades.push(Number(prompt("enter a grade")));
-}
+var indexG=0;
 var lowGrade=100;
 var highGrade=0;
 var avg=0;
+while (grades[indexG-1]!=101) {
+    grades.push(Number(prompt("enter a grade")));
+    indexG++;
+}
 
-for (var index=0;index<grades.length;index++){
+
+for (var index=0;index<grades.length-1;index++){
     //look for the lowest grade
     if (grades[index]<lowGrade){
         lowGrade=grades[index];
