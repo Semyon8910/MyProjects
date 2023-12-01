@@ -22,6 +22,4 @@ for (var index=0;index<grades.length-1;index++){
 }
 avg/=grades.length;
 
-console.log("lowest grade:",lowGrade);
-console.log("highest grade:",highGrade);
-console.log("average:",avg);
+alert("lowest grade:"+lowGrade+" highest grade:"+highGrade+" average:"+avg);
