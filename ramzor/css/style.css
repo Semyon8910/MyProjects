@@ -1,6 +1,8 @@
+* {
+    text-align: center;
+}
 body {
     background-color: bisque;
-    text-align: center;
 }
 div {
     background-color: gray;

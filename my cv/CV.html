@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        *{
+            direction: rtl;
+            text-align: center;
+        }
+        body {
+            margin: 2vh
+        };
+    </style>
+</head>
+<body>
+    <h1>קורות חיים</h1>
+    <hr/>
+    <div class="container">
+        <h2>פרטים אישיים</h2>
+        <br/>
+        <div class="row">
+        <table class="table table-bordered">
+            <tr>
+                <th>שם ומשפחה</th>
+                <th>תעודות זהות</th>
+                <th>נייד</th>
+            </tr>
+            <tr>
+                <td>סמיון חרמושין</td>
+                <td>341105211</td>
+                <td><a href="tel:+972546533097">0546533097</a></td>
+            </tr>
+            <tr>
+                <th>עיר מגורים</th>
+                <th>תאריך לידה</th>
+                <th>E-mail</th>
+            </tr>
+            <tr>
+                <td>חיפה</td>
+                <td>20/10/1989</td>
+                <td><a href="mailto:khram89@gmail.com">khram89@gmail.com</a></td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="container">
+        <h2>ניסיון תעסוקתי</h2>
+        <br/>
+        <div id="accordion">
+            <div class="card row">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#DagOn">
+                        <span class="border">
+                            2021-עד עכשיו
+                        </span>
+                        &nbsp;
+                        <span class="border">
+                            איש צוות מחלקת אימונים, מכון ימי, חברת דג-און
+                        </span>
+                    </a>
+                </div>
+                <div id="DagOn" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>גידול דגיגים של דגי ים בחממות</li>
+                            <li>הפעלה ותחזוקה של מערכות בחממות</li>
+                            <li>ליווי משלוחי דגיגים איקלום והעברה של הדגיגים לבריכות איכלוס</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card row">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#KSP">
+                        <span class="border">
+                            2021-2020
+                        </span>
+                        &nbsp;
+                        <span class="border">
+                            עובד מחלקת החזרות, KSP
+                        </span>
+                    </a>
+                </div>
+                <div id="KSP" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>בדיקות תקינות מוצרים שלקוחות החזירו לסניפי KSP, קבלת החלטות על תיקונים</li>
+                            <li>הכנת משלוחים של מוצרים תקולים לספקים ונותני שירות</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card row">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#MaozAhzaka">
+                        <span class="border">
+                            2019-2020
+                        </span>
+                        &nbsp;
+                        <span class="border">
+                            איש אחזקה, מדגה מעוז חיים
+                        </span>
+                    </a>
+                </div>
+                <div id="MaozAhzaka" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                           <li>הפעלה ותיקון מערכות העשרת חמצן והאכלה</li>
+                           <li>ניהול מספר עובדים</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card row">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#Maoz">
+                        <span class="border">
+                            2017-2019
+                        </span>
+                        &nbsp;
+                        <span class="border">
+                            איש צוות מים, מדגה מעוז חיים
+                        </span>
+                    </a>
+                </div>
+                <div id="Maoz" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                           <li>העברות דגים</li>
+                           <li>הפוך מין של אמנונים</li>
+                           <li>גירוש ציפורים</li>
+                           <li>שמירות</li>
+                           <li>ניהול מספר עובדים</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card row">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#RTKS">
+                        <span class="border">
+                            2013-2016
+                        </span>
+                        &nbsp;
+                        <span class="border">
+                            מומחה בכיר, Rostelecom (חברת התקשורת הרוסית הלאומית, סט. פטרבורג, רוסיה)
+                        </span>
+                    </a>
+                </div>
+                <div id="RTKS" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>ניהול משמרות תמיכה טכנית בלקוחות פרטיים ועסקיים</li>
+                            <li>חלוקת משימות לאנשי צוות אחרים באמצעות תוכנת Avaya CMS</li>
+                            <li>בקרת איכות השירות</li>
+                            <li>ניהול ופתרון משברים מול לקוחות</li>
+                            <li>חניכת עובדים חדשים</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card row">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#RTK2">
+                        <span class="border">
+                            2012-2013
+                        </span>
+                        &nbsp;
+                        <span class="border">
+                            מומחה דרג ב', Rostelecom (חברת התקשורת הרוסית הלאומית, סט. פטרבורג, רוסיה)
+                        </span>
+                    </a>
+                </div>
+                <div id="RTK2" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>תמיכה טכנית בלקוחות פרטיים ועסקיים חשובים</li>
+                            <li>תמיכה וייעוץ מקצועי לעובדים אחרים</li>
+                            <li>חניכת עובדים חדשים</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card row">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#RTK1">
+                        <span class="border">
+                            2012-2011
+                        </span>
+                        &nbsp;
+                        <span class="border">
+                            מומחה דרג א', Rostelecom (חברת התקשורת הרוסית הלאומית, סט. פטרבורג, רוסיה)
+                        </span>
+                    </a>
+                </div>
+                <div id="RTK1" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                           <li>תמיכה טכנית בלקוחות פרטיים ועסקיים</li>
+                           <li>ניהול ובקרה של תהליך הטיפול בתקלות</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card row">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#Restec">
+                        <span class="border">
+                            2011-2009
+                        </span>
+                        &nbsp;
+                        <span class="border">
+                            טכנאי מחשבים וסאונד, Restec Group (סט. פטרבורג, רוסיה)
+                        </span>
+                    </a>
+                </div>
+                <div id="Restec" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                           <li>הקמת והתקנת מערכות צפייה וסאונד בעשרות כנסים, תערוכות, ירידים ועוד</li>
+                           <li>הקמת רשתות מחשב לפי צרכי הארוע</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card row">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#SKB">
+                        <span class="border">
+                            2007
+                        </span>
+                        &nbsp;
+                        <span class="border">
+                            תמיכה טכנית, האקדמיה הרוסית למדעים (יוז'נו-סחלינסק, רוסיה)
+                        </span>
+                    </a>
+                </div>
+                <div id="SKB" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                           <li>התקנת והגדרת מחשבי Windows ו-Linux</li>
+                           <li>התקנת תוכנות משרדיות שונות</li>
+                           <li>הקמת רשת משרדית (LAN)</li>
+                           <li>התקנת ציוד טלמטריה למטרות מחקר ימי</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="container">
+        <h2>השכלה</h2>
+        <br/>
+        <table class="table table-striped">
+            <tr>
+                <td>2023-2024</td>
+                <td>John Bryce full stack web developer</td>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td>קורס טכנאי PC מכללה למינהל חיפה</td>
+            </tr>
+            <tr>
+                <td>2016-2017</td>
+                <td>לימודים במכללה האקדמית אשקלון במסגרת תוכנית תק"א (תוכנית קדם אקדמית) לימודי עברית, אנגלית, מחשבים, סטטיסטיקה וסוציולוגיה</td>
+            </tr>
+            <tr>
+                <td>2007-2009</td>
+                <td>לימודי ניווט ימי, האקדמיה הימית הצבאית, סנט-פטרסבורג (רוסיה)</td>
+            </tr>
+            <tr>
+                <td>1996-2006</td>
+                <td>תיכון עירוני (כיתת פיזיקה-מתמטיקה), יוז'נו-סחלינסק (רוסיה)</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <h2>ידע במחשבים</h2>
+        <br/>
+        <table class="table table-striped">
+            <tr>
+                <td>מערכות הפעלה</td>
+                <td>Windows, Mac Os, Linux</td>
+            </tr>
+            <tr>
+                <td>תקשורת</td>
+                <td>Microsoft Active Directory, TCP/IP</td>
+            </tr>
+            <tr>
+                <td>חומרה</td>
+                <td>ידע וניסיון בתיקון, פירוק והרכבת מחשבים נייחים וניידים</td>
+            </tr>
+            <tr>
+                <td>תוכנות</td>
+                <td>Microsoft Office, Helpdesk, Oracle Virtual Box, VMWare</td>
+            </tr>
+            <tr>
+                <td>תכנות</td>
+                <td>HTML, CSS, bootstrap</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <h2>שליטה בשפות</h2>
+        <br/>
+        <table class="table table-striped">
+            <tr>
+                <td>רוסית</td>
+                <td>שפת אם</td>
+            </tr>
+            <tr>
+                <td>עברית</td>
+                <td>רמה טובה מאוד</td>
+            </tr>
+            <tr>
+                <td>אנגלית</td>
+                <td>רמה מקצועית</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <br/>
+        <table class="table table-striped">
+            <tr>
+                <th>רשיון נהיגה</th>
+                <td>B ,A1, (טרקטור) 1, מלגזה עד 20 טון</td>
+            </tr>
+        </table>
+</body>
+</html>
