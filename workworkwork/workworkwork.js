@@ -35,7 +35,7 @@ function Tasks(taskName,taskDate,taskDone){
     this.taskDone=taskDone;
 }
 
-taskIsDone = function(index){
+function taskIsDone (index) {
     tasks[index].taskDone=true;
     createTable();
     saveTasks();
