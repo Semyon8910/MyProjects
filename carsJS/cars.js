@@ -1,5 +1,7 @@
 var carNumbers = [];
 var allCars = [];
+var imageUrl = [];
+var imageCount = 5;
 var carInfo = "";
 var carEndPoint = "https://data.gov.il/api/3/action/datastore_search?resource_id=053cea08-09bc-40ec-8f7a-156f0677aff3&q=";
 var data = ["manufacturer","model","color","gasoline","year","nextTest","km"]
@@ -14,6 +16,8 @@ for (var index=0; index<6; index++) {
 }
 table+=`
 <input type="number" id="index6" placeholder="${data[6]}" required/><br/><br/>
+<input type="URL" id="index7" placeholder="image url"/>
+<input type="button" value="upload image" id="imageBtn"/>you can upload <span id="count">${imageCount}</span> images more<br/><br/>
 <input type="submit" value="add car" id="addCar"/>
 <input type="reset" value="reset"/><br/><br/>
 </form>
@@ -22,14 +26,24 @@ table+=`
 
 document.getElementById("mySite").innerHTML = table;
 
+document.getElementById("imageBtn").addEventListener("click",() => {
+    imageUrl.push(document.getElementById("index7").value);
+    document.getElementById("index7").value = "";
+    imageCount--;
+    document.getElementById("count").innerHTML = imageCount;
+    });
+
 const addCar = ()=>{
     if (validateCar(document.getElementById("carNumber").value)) {
         alert("car already exists");
         return;
     }
-    addCarData(carInfo);
-    // console.log(addCarData(document.getElementById("carNumber").value));
     carInfo.km = document.getElementById("index6").value;
+    carInfo.images = imageUrl;
+    imageUrl = [];
+    imageCount = 5;
+    document.getElementById("count").innerHTML = imageCount;
+    addCarData(carInfo);
     allCars.push(carInfo);
     createTable();
     document.getElementById("carForm").reset();
@@ -41,7 +55,9 @@ const validateCar = (carNumber) => {
             return true;
         }
     }
+    return false;
 } 
+
 
 document.getElementById("carNumber").addEventListener("focusout",async ()=>{
     carInfo = await getCarAPI(document.getElementById("carNumber").value);
@@ -56,8 +72,6 @@ const updateFields = ()=>{
     document.getElementById("index3").value = carInfo.sug_delek_nm;
     document.getElementById("index4").value = carInfo.moed_aliya_lakvish;
     document.getElementById("index5").value = carInfo.tokef_dt;
-    // document.getElementById("index6").value = carInfo.;
-    //console.log(myInfo);
 }
 
 //tell the computer that we will using asynchronicity function
@@ -80,6 +94,7 @@ const createTable = ()=>{
                 <th>year</th>
                 <th>test</th>
                 <th>km</th>
+                <th>images</th>
             </tr>
     `
     var tableBody = ()=>{
@@ -90,7 +105,6 @@ const createTable = ()=>{
         return allrows;
     }
 
-    //var tableBody = allCars.forEach((item)=>addCarData(item));
     var tableFooter = '</table>'
     document.getElementById("carTable").innerHTML = tableHeader+tableBody()+tableFooter;
 }
@@ -107,6 +121,7 @@ const addCarData = (carInfo)=>{
             <td>${carInfo.moed_aliya_lakvish}</td>
             <td>${niceDate(carInfo.tokef_dt)}</td>
             <td>${carInfo.km}</td>
+            <td><img src="${carInfo.images[0]}" width=100/><img src="${carInfo.images[1]}" width=100/><img src="${carInfo.images[2]}" width=100/><img src="${carInfo.images[3]}" width=100/><img src="${carInfo.images[4]}" width=100/></td>
         </tr>
     `;
 }
