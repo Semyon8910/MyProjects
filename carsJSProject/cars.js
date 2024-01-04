@@ -61,7 +61,6 @@ const validateCar = (carNumber) => {
 
 document.getElementById("carNumber").addEventListener("focusout",async ()=>{
     carInfo = await getCarAPI(document.getElementById("carNumber").value);
-    console.log(carInfo);
     updateFields(carInfo);
 });
 
