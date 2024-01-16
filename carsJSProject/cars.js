@@ -129,5 +129,5 @@ const niceDate = (uglyDate)=>{
     //return uglyDate;
     //new date will be now an array, with size of - sign (+1)
     var newDate = uglyDate.split('-');
-    return `${newDate[2]}-${newDate[1]}-${newDate[0]}`;
+    return `${newDate[2]}/${newDate[1]}/${newDate[0]}`;
 }
