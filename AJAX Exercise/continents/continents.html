@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <title>Continents</title>
+</head>
+<body>
+    <table border="1" cellspacing="0">
+    </table>
+    <script>
+        let europePopulation = 0;
+        let asiaPopulation = 0;
+
+        $.get("https://restcountries.com/v3.1/all",(data) => continentPopulation(data),"json");
+
+        const continentPopulation = (data) => {
+            let statisics = new Object();
+            for (let index=0; index<data.length; index++){
+                if (statisics[data[index].region] == undefined) {
+                    statisics[data[index].region] = data[index].population;
+                } else {
+                    statisics[data[index].region] += data[index].population;
+                }
+        }
+
+        displayStatistics(statisics);
+    }
+
+    const displayStatistics = (data) => {
+        for (item in data) {
+            $("table").append(`
+                <tr>
+                    <td>${item}</td>
+                    <td>${data[item]}</td>
+                </tr>`);
+        }
+    }
+    </script>
+</body>
+</html>

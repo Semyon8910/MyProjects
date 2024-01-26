@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .picture{
+            background-image: url(https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&w=150);
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="picture"></div>
+    <script>
+        $(()=>{
+            $(".picture")
+            .animate({marginLeft: "1000px"},3000)
+            .animate({marginTop: "480"},3000)
+            .animate({marginLeft: "0"},3000)
+            .animate({marginTop: "0"},3000)
+        })
+    </script>
+</body>
+</html>

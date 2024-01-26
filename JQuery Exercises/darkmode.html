@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi amet esse distinctio exercitationem, quidem nemo adipisci impedit enim neque non voluptatem fugiat quae omnis illum qui optio. Doloribus, accusamus sapiente?
+    <br/><button id="dark">dark mode</button>
+    <script>
+        let isDark = true;
+        $(()=>{
+            $("#dark").on("click",()=>{
+            if (isDark){
+                $("*").css({"background-color":"black", "color": "white"})
+            } else {
+                $("*").css({"background-color":"white", "color": "black"})
+            }
+            isDark =! isDark;
+            });                
+        });
+    </script>
+</body>
+</html>
