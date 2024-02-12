@@ -1,5 +1,5 @@
 const lyricsUrl = "https://api.lyrics.ovh/v1/";
-const artistUrl = "https://virtserver.swaggerhub.com/wzhan/LittleArtists/1.5.0/search?keywords=" ;
+const artistUrl = "https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg" ;
 
 async function getData () {
     let niceLyrics = "";
