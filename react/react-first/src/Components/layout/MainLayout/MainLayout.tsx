@@ -3,6 +3,8 @@ import MainFooter from "../MainFooter/MainFooter";
 import MainMenu from "../MainMenu/MainMenu";
 import MainPage from "../MainPage/MainPage";
 import "./MainLayout.css";
+import Login from "../Login/login";
+import Gabriel from "../gabriel/gabriel";
 
 function MainLayout(): JSX.Element {
     return (
@@ -14,7 +16,7 @@ function MainLayout(): JSX.Element {
                 <MainMenu/>
             </aside>
             <main>
-                <MainPage/>
+                <Gabriel/>
             </main>
             <footer>
                 <MainFooter/>
