@@ -13,7 +13,7 @@ function Gabriel(): JSX.Element {
     }
     return (
         <div className="Box">
-			<input type="text" placeholder="enter name" onInput={updateName}/><br/><br/>
+			<input type="text" placeholder="enter name" onChange={updateName}/><br/><br/>
             <input type="button" value="send" onClick={sendName}/><br/>
             {displayName && myName}
         </div>

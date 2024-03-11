@@ -20,7 +20,7 @@ function Login(): JSX.Element {
     console.log("time was changed")
     //ourTime=new Date().toLocaleTimeString(); will not work in react , we are using Virtual DOM
     setTime(new Date().toLocaleTimeString());
-    },1000);
+    },900);
     },[])
    return (
        <div className="login Box">
