@@ -1,3 +1,4 @@
+import MainRoute from "../../Routes/MainRoute/MainRoute";
 import CoinLayout from "../CoinLayout/CoinLayout";
 import FooterLayout from "../FooterLayout/FooterLayout";
 import HeaderLayout from "../HeaderLayout/HeaderLayout";
@@ -14,7 +15,7 @@ function MainLayout(): JSX.Element {
                 <MenuLayout/>
             </aside>
             <main>
-                <CoinLayout/>
+                <MainRoute/>
             </main>
             <footer>
                 <FooterLayout/>
