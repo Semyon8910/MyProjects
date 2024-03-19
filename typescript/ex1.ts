@@ -21,5 +21,5 @@ class BirthYearCounter {
 
 let semyon = new BirthYearCounter("Semyon",35);
 
-console.log(semyon.birthYear());
 console.log(semyon.namePrint());
+console.log(semyon.birthYear());

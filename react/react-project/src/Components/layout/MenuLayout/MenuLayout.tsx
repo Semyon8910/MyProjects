@@ -3,10 +3,10 @@ import "./MenuLayout.css";
 function MenuLayout(): JSX.Element {
     return (
         <div className="MenuLayout">
-			Assets
-            Rates
-            Exchanges
-            Markets
+			Assets<hr/>
+            Rates<hr/>
+            Exchanges<hr/>
+            Markets<hr/>
         </div>
     );
 }

@@ -1,8 +1,8 @@
 class Cinema {
     private cinemaName: String;
-    private numberOfEnters: number;
-    private openTime: number;
-    private closeTime: number;
+    private numberOfEnters!: number;
+    private openTime!: number;
+    private closeTime!: number;
 
     constructor(cinemaName: String, numberOfEnters: number, openTime: number, closeTime: number){
         this.cinemaName = cinemaName;
@@ -22,7 +22,7 @@ class Cinema {
 
     public set setOpenTime(openTime: number){
         if(openTime>12 || openTime<6) {
-            console.log("wrong time");
+            console.log("wrong open time");
             this.openTime = 6;
         } else {
             this.openTime = openTime;
@@ -31,7 +31,7 @@ class Cinema {
 
     public set setCloseTime(closeTime: number){
         if(closeTime<18 || closeTime>23) {
-            console.log("wrong time");
+            console.log("wrong close time");
             this.closeTime = 23;
         } else {
             this.closeTime = closeTime;
