@@ -1,0 +1,9 @@
+.signin {
+    a {
+        color: orange;
+    }
+}
+.ErrorText {
+    color: red;
+    font-weight: bolder;
+}
