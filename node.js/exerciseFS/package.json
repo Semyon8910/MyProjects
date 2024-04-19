@@ -1,0 +1,12 @@
+{
+  "name": "exercisefs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myfunc.js",
+  "scripts": {
+    "start": "node myfunc.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "exerciseexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "class.js",
+  "scripts": {
+    "devm": "nodemon class.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

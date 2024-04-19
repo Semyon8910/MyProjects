@@ -1,0 +1,13 @@
+{
+  "name": "events",
+  "version": "1.0.0",
+  "description": "",
+  "main": "curier.js",
+  "scripts": {
+    "start": "node curier.js",
+    "dev": "nodemon curier.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

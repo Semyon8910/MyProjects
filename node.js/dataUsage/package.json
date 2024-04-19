@@ -1,0 +1,12 @@
+{
+  "name": "datausage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "objects.js",
+  "scripts": {
+    "start": "node objects.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
