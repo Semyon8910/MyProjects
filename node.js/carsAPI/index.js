@@ -79,12 +79,6 @@ const getDisabled = (carNumber) => {
 )}
 
 
-// async function test () {
-// const carData = await getMotorcycle(52937703);
-// console.log(carData);
-// }
-
-// test();
 // 52937703 motorcycle
 // 2236638 privat with recall
 // 6544126 out of road
