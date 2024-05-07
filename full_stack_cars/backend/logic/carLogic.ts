@@ -36,3 +36,9 @@ const soldList = () => {}
 // soldCar("4424213");
 console.log(searchByPrice(5000, 50000));
 
+export {
+    addCar,
+    soldCar,
+    searchByPrice
+}
+

@@ -1,4 +1,4 @@
-export default class CarData {
+export class CarData {
     public carNumber: string;
     public manufacturer:string;
     public testData : Date;
