@@ -23,10 +23,29 @@ const truckInfo = async (id:string)=>{
     let myData = (await axios.get(TRUCK_URL+id)).data.result.records[0];
     return myData;
 }
+
+const handiCapInfo = async (id:string)=>{
+    let myData = (await axios.get(HANDICAP_URL+id)).data.result.records[0];
+    return myData;
+}
+
+const offRoadInfo = async (id:string)=>{
+    let myData = (await axios.get(OFFROAD_URL+id)).data.result.records[0];
+    return myData;
+}
+
+const recallInfo = async (id:string)=>{
+    let myData = (await axios.get(RECALL_URL+id)).data.result.records[0];
+    return myData;
+}
+
 export {
     carInfo,
     bikeInfo,
-    truckInfo
+    truckInfo,
+    handiCapInfo,
+    offRoadInfo,
+    recallInfo
 }
 
 //for checking purposes

@@ -4,9 +4,9 @@ import { carInfo } from "../../../node.js/cars_express_typescript/logic/Transpor
 const carRouter = express.Router();
 
 carRouter.get(
-    '/addCar/:id', 
+    '/addCar/:carNumber', 
     async (req:Request, res:Response, nextFunction: NextFunction) => {
-        res.status(200).json(await carInfo(req.params.id));
+        res.status(200).json(await carInfo(req.params.carNumber));
     }
 );
 
