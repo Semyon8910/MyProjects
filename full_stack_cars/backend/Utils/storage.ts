@@ -1,4 +1,4 @@
-import CarData from "../Models/carData";
+import {CarData} from "../Models/carData";
 import * as fs from "fs";
 
 const addToStorage = (carData:CarData) => {
