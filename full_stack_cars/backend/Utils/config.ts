@@ -1,8 +1,7 @@
-export class Config {
-    public port = 8080;
-    public host = 'localhost';
+class Config{
+    public webPort = 8080;
+    public webHost = 'localhost';
 }
 
 const config = new Config();
-
 export default config;

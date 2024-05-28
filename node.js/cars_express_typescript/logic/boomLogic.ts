@@ -9,4 +9,4 @@ const shamaiInfo = async (id:string) => {
 
 export {shamaiInfo}
 
-shamaiInfo("100").then(res=> console.log(res));
+// shamaiInfo("100").then(res=> console.log(res));

@@ -1,14 +1,14 @@
 {
-  "name": "backend",
+  "name": "cars_express_good",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec ts-node server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@types/cors": "^2.8.17",
     "@types/express-fileupload": "^1.5.0",
@@ -22,7 +22,6 @@
     "jsonwebtoken": "^9.0.2",
     "loadsh": "^0.0.4",
     "morgan": "^1.10.0",
-    "node-ts": "^6.0.1",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
