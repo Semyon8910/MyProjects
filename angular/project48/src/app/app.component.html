@@ -1,0 +1,15 @@
+<ul>
+  <!-- <li>{{names[0]}}</li>
+  <li>{{names[1]}}</li>
+  <li>{{names[2]}}</li>
+  <li>{{names[3]}}</li> -->
+  <li *ngFor="let item of names;" [ngClass]="names.indexOf(item)%2==0?'white':'black'">{{item}}</li>
+</ul>
+<hr/>
+<ul>
+  <li *ngFor="let item of fillChildrenList()" [ngSwitch]="item">
+    <span *ngSwitchCase="'boy'" ngClass="boy">{{item}}</span>
+    <span *ngSwitchCase="'girl'" ngClass="girl">{{item}}</span>
+    <span *ngSwitchDefault ngClass="black">{{item}}</span>
+  </li>
+</ul>
