@@ -1,0 +1,12 @@
+<div [ngClass]="screenMode">
+<h1>ages seeker</h1>
+<input type="number" placeholder="age" (input)="ageCalc($event)"><br/>
+<div appWife *ngIf="age>19 && age<31; else out_of_bound">
+  age: {{age}}
+</div>
+<ng-template appOutOfBounds #out_of_bound>
+  age: {{age}}
+</ng-template>
+
+<input type="button" value="next" (click)="nextMode($event)"/>
+</div>

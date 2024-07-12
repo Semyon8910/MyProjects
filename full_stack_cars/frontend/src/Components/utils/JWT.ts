@@ -22,6 +22,11 @@ export const checkJWT = () => {
   if (jwt.length < 10) {
     return false;
   }
+
+  //check if expired
+  if (isExpired(jwt)) {
+    return false;
+  }
   
   //console.log("jwt:",decodeToken(jwt));
   let myDecoded:any = decodeToken(jwt);
