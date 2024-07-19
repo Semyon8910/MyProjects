@@ -1,0 +1,18 @@
+<div style="text-align: center;">
+  <app-header></app-header>
+  <h1>{{title}}</h1>
+  <h2>{{name}}</h2>
+  <app-success></app-success>
+  <app-failure></app-failure>
+  <input type="number" name="temperature" placeholder="temperature in celsius" (input)="tempConversion($event)"/>
+  <h4>{{fahrenheit}} F</h4>
+  <input type="number" name="currency" placeholder="NIS" [(ngModel)]="NIS"/><br/>
+  {{NIS*dollar}} dollar <br/>
+  {{NIS*euro}} euro <br/>
+  {{NIS*canadianDollar}} canadian dollar <br/>
+  <input type="number" name="centimeter" placeholder="centimeter" [(ngModel)]="centimeter"/><br/>
+  {{centimeter*inch}} inch<br/>
+  <input type="number" name="meter" placeholder="meter" [(ngModel)]="meter"/><br/>
+  {{meter*feet}} feet
+
+</div>
