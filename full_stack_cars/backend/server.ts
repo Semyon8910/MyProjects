@@ -6,6 +6,7 @@ import config from "./Utils/config"
 import carRouter from "./Routes/vehicles";
 import ErrorHandler from "./MiddleWare/routeNotFound";
 import loginRouter from "./Routes/login";
+import dal_mongodb from "./DAL/dal_mongoDB";
 
 //import ErrorHandler
 //import router 
@@ -31,6 +32,9 @@ server.use("/api/v1/transport", carRouter);
 server.use("/api/v1/login",loginRouter);
 //404 handler
 server.use("*",ErrorHandler);
+
+//make the connection to mongoDB
+dal_mongodb.connect();
 
 //start the server
 server.listen(config.webPort, ()=>{
