@@ -25,7 +25,7 @@ export class AppComponent {
 
   nextMode(event:any) {
     this.mode=this.mode+1;
-    if (this.mode==3){
+    if (this.mode==this.screenModes.length){
       this.mode=0
     }
     this.screenMode = this.screenModes[this.mode];
